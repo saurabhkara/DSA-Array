@@ -127,3 +127,38 @@ function mergeArrayWhile(){
     }
     console.log(arrayC)
 }
+
+
+let arrSort=[40,30,12,25];
+function arraySorting(){
+ 
+    for(let i=0; i<arrSort.length;i++){
+        for(let j=0; j<arrSort.length-i; j++){
+            if(arrSort[j]>arrSort[j+1]){
+                let temp=arrSort[j];
+                arrSort[j]=arrSort[j+1];
+                arrSort[j+1]=temp
+            }
+        }
+    }
+    console.log(arrSort);
+    
+}
+
+
+function recurssionExamp(num){
+    if(num==1){
+        return 1;
+    }
+    let result= num * recurssionExamp(num-1);
+    console.log(result)
+    return result;
+}
+
+function recurssionExamp2(num){
+    let fabResult=1;
+    for(let i=1;i<=num;i++){
+        fabResult = fabResult*i;
+    }
+    console.log(fabResult);
+}
