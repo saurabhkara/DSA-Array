@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function color(){
+            console.log('Function called and printing in console')
+        }
+
+        function days(){
+            color();
+
+        }
+        function hareKrishna(){
+            days();
+        }
+        function debuggerTest(){
+            hareKrishna();
+        }
+
+        // debuggerTest()
+
+
+        // Head recursion
+
+        function test(x){
+            console.log(x);
+            if(x>0){
+                test(x-1);
+            }
+        }
+
+        test(5);
+
+
+        //Tail Recursion
+        function test(x){
+            if(x>0){
+                test(x-1);
+            }
+            console.log(x)
+        }
+        test(5)
+
+    </script>
+</head>
+<body>
+
+
+    <!-- <script src="./array.js"></script> -->
+</body>
+</html>
